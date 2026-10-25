@@ -1,16 +1,35 @@
 {
   "metrics": {
     "method": "dense",
-    "n": 51,
-    "hit@1": 0.863,
-    "hit@3": 0.922,
-    "hit@5": 0.98,
-    "hit@10": 0.98,
-    "mrr@10": 0.902
+    "all": {
+      "n": 79,
+      "hit@1": 0.684,
+      "hit@3": 0.759,
+      "hit@5": 0.835,
+      "hit@10": 0.873,
+      "mrr@10": 0.739
+    },
+    "easy": {
+      "n": 51,
+      "hit@1": 0.863,
+      "hit@3": 0.922,
+      "hit@5": 0.98,
+      "hit@10": 0.98,
+      "mrr@10": 0.902
+    },
+    "hard": {
+      "n": 28,
+      "hit@1": 0.357,
+      "hit@3": 0.464,
+      "hit@5": 0.571,
+      "hit@10": 0.679,
+      "mrr@10": 0.443
+    }
   },
   "rows": [
     {
       "id": "q001",
+      "split": "easy",
       "question": "How many days of paid annual leave does an employee get after more than five years of service?",
       "gold": [
         "employment_act-60E"
@@ -31,6 +50,7 @@
     },
     {
       "id": "q002",
+      "split": "easy",
       "question": "How long is maternity leave?",
       "gold": [
         "employment_act-37"
@@ -51,6 +71,7 @@
     },
     {
       "id": "q003",
+      "split": "easy",
       "question": "How many paid public holidays is an employee entitled to each year?",
       "gold": [
         "employment_act-60D"
@@ -71,6 +92,7 @@
     },
     {
       "id": "q004",
+      "split": "easy",
       "question": "What is the maximum number of working hours in a week?",
       "gold": [
         "employment_act-60A"
@@ -91,6 +113,7 @@
     },
     {
       "id": "q005",
+      "split": "easy",
       "question": "How much notice must an employer give to terminate a contract of service?",
       "gold": [
         "employment_act-12"
@@ -111,6 +134,7 @@
     },
     {
       "id": "q006",
+      "split": "easy",
       "question": "Can an employer dismiss an employee without notice for misconduct?",
       "gold": [
         "employment_act-14"
@@ -131,6 +155,7 @@
     },
     {
       "id": "q007",
+      "split": "easy",
       "question": "By when must wages be paid after the end of the wage period?",
       "gold": [
         "employment_act-19"
@@ -151,6 +176,7 @@
     },
     {
       "id": "q008",
+      "split": "easy",
       "question": "What deductions is an employer allowed to make from an employee's wages?",
       "gold": [
         "employment_act-24"
@@ -171,6 +197,7 @@
     },
     {
       "id": "q009",
+      "split": "easy",
       "question": "How many days of paid sick leave is an employee entitled to?",
       "gold": [
         "employment_act-60F"
@@ -191,6 +218,7 @@
     },
     {
       "id": "q010",
+      "split": "easy",
       "question": "Can an employer terminate a pregnant employee?",
       "gold": [
         "employment_act-41A"
@@ -211,6 +239,7 @@
     },
     {
       "id": "q011",
+      "split": "easy",
       "question": "What must an employer pay if an employee works on a rest day?",
       "gold": [
         "employment_act-60"
@@ -231,6 +260,7 @@
     },
     {
       "id": "q012",
+      "split": "easy",
       "question": "What is the overtime rate of pay?",
       "gold": [
         "employment_act-60A"
@@ -251,6 +281,7 @@
     },
     {
       "id": "q013",
+      "split": "easy",
       "question": "What should I do if I am sexually harassed at work?",
       "gold": [
         "employment_act-81B",
@@ -272,6 +303,7 @@
     },
     {
       "id": "q014",
+      "split": "easy",
       "question": "Can an employee request flexible working arrangements?",
       "gold": [
         "employment_act-60P",
@@ -293,6 +325,7 @@
     },
     {
       "id": "q015",
+      "split": "easy",
       "question": "What is the punishment for forcing someone to work against their will?",
       "gold": [
         "employment_act-90B"
@@ -313,6 +346,7 @@
     },
     {
       "id": "q016",
+      "split": "easy",
       "question": "Where do I complain if my employer does not pay my wages?",
       "gold": [
         "employment_act-69"
@@ -333,6 +367,7 @@
     },
     {
       "id": "q017",
+      "split": "easy",
       "question": "Must a contract of service be in writing?",
       "gold": [
         "employment_act-10"
@@ -353,6 +388,7 @@
     },
     {
       "id": "q018",
+      "split": "easy",
       "question": "What benefits must an employer pay if terminating an employee because of redundancy?",
       "gold": [
         "employment_act-60J"
@@ -373,6 +409,7 @@
     },
     {
       "id": "q019",
+      "split": "easy",
       "question": "What are the personal data protection principles?",
       "gold": [
         "pdpa-5"
@@ -393,6 +430,7 @@
     },
     {
       "id": "q020",
+      "split": "easy",
       "question": "Can my personal data be disclosed to others without my consent?",
       "gold": [
         "pdpa-8",
@@ -414,6 +452,7 @@
     },
     {
       "id": "q021",
+      "split": "easy",
       "question": "How do I ask a company for a copy of my personal data?",
       "gold": [
         "pdpa-30",
@@ -435,6 +474,7 @@
     },
     {
       "id": "q022",
+      "split": "easy",
       "question": "Can I ask a company to correct my personal data?",
       "gold": [
         "pdpa-34"
@@ -455,6 +495,7 @@
     },
     {
       "id": "q023",
+      "split": "easy",
       "question": "What counts as sensitive personal data?",
       "gold": [
         "pdpa-4"
@@ -475,6 +516,7 @@
     },
     {
       "id": "q024",
+      "split": "easy",
       "question": "Can a company send my personal data to another country?",
       "gold": [
         "pdpa-129"
@@ -495,6 +537,7 @@
     },
     {
       "id": "q025",
+      "split": "easy",
       "question": "How long can a company keep my personal data?",
       "gold": [
         "pdpa-10"
@@ -515,6 +558,7 @@
     },
     {
       "id": "q026",
+      "split": "easy",
       "question": "What security steps must a company take to protect personal data?",
       "gold": [
         "pdpa-9"
@@ -535,6 +579,7 @@
     },
     {
       "id": "q027",
+      "split": "easy",
       "question": "How do I file a complaint about misuse of my personal data?",
       "gold": [
         "pdpa-104"
@@ -555,6 +600,7 @@
     },
     {
       "id": "q028",
+      "split": "easy",
       "question": "What is the penalty for unlawfully collecting or selling personal data?",
       "gold": [
         "pdpa-130"
@@ -575,6 +621,7 @@
     },
     {
       "id": "q029",
+      "split": "easy",
       "question": "Can I withdraw my consent for a company to process my data?",
       "gold": [
         "pdpa-38"
@@ -595,6 +642,7 @@
     },
     {
       "id": "q030",
+      "split": "easy",
       "question": "Which organisations must register as data users?",
       "gold": [
         "pdpa-14"
@@ -615,6 +663,7 @@
     },
     {
       "id": "q031",
+      "split": "easy",
       "question": "Does the personal data law apply to the government?",
       "gold": [
         "pdpa-3"
@@ -635,6 +684,7 @@
     },
     {
       "id": "q032",
+      "split": "easy",
       "question": "Can I stop a company from using my data for direct marketing?",
       "gold": [
         "pdpa-43"
@@ -655,6 +705,7 @@
     },
     {
       "id": "q033",
+      "split": "easy",
       "question": "What does the Personal Data Protection Commissioner do?",
       "gold": [
         "pdpa-48"
@@ -675,6 +726,7 @@
     },
     {
       "id": "q034",
+      "split": "easy",
       "question": "What is coercion under contract law?",
       "gold": [
         "contracts_act-15"
@@ -695,6 +747,7 @@
     },
     {
       "id": "q035",
+      "split": "easy",
       "question": "What is undue influence?",
       "gold": [
         "contracts_act-16"
@@ -715,6 +768,7 @@
     },
     {
       "id": "q036",
+      "split": "easy",
       "question": "What is a contract of guarantee?",
       "gold": [
         "contracts_act-79"
@@ -735,6 +789,7 @@
     },
     {
       "id": "q037",
+      "split": "easy",
       "question": "When is an agreement void because it restrains someone's trade or profession?",
       "gold": [
         "contracts_act-28"
@@ -755,6 +810,7 @@
     },
     {
       "id": "q038",
+      "split": "easy",
       "question": "Who is competent to enter into a contract?",
       "gold": [
         "contracts_act-11"
@@ -775,6 +831,7 @@
     },
     {
       "id": "q039",
+      "split": "easy",
       "question": "Until when can a proposal be revoked?",
       "gold": [
         "contracts_act-5"
@@ -795,6 +852,7 @@
     },
     {
       "id": "q040",
+      "split": "easy",
       "question": "What compensation can I claim if the other party breaks the contract?",
       "gold": [
         "contracts_act-74"
@@ -815,6 +873,7 @@
     },
     {
       "id": "q041",
+      "split": "easy",
       "question": "What is a contract of indemnity?",
       "gold": [
         "contracts_act-77"
@@ -835,6 +894,7 @@
     },
     {
       "id": "q042",
+      "split": "easy",
       "question": "Is an agreement without consideration valid?",
       "gold": [
         "contracts_act-26"
@@ -855,6 +915,7 @@
     },
     {
       "id": "q043",
+      "split": "easy",
       "question": "What duty of care does a bailee owe?",
       "gold": [
         "contracts_act-104"
@@ -875,6 +936,7 @@
     },
     {
       "id": "q044",
+      "split": "easy",
       "question": "What is a pledge and who is a pawnee?",
       "gold": [
         "contracts_act-125"
@@ -895,6 +957,7 @@
     },
     {
       "id": "q045",
+      "split": "easy",
       "question": "When does an agent's authority come to an end?",
       "gold": [
         "contracts_act-154"
@@ -915,6 +978,7 @@
     },
     {
       "id": "q046",
+      "split": "easy",
       "question": "What happens if a contract becomes impossible to perform?",
       "gold": [
         "contracts_act-57"
@@ -935,6 +999,7 @@
     },
     {
       "id": "q047",
+      "split": "easy",
       "question": "What must an agent do when conducting the principal's business?",
       "gold": [
         "contracts_act-164"
@@ -955,6 +1020,7 @@
     },
     {
       "id": "q048",
+      "split": "easy",
       "question": "Are wagering agreements enforceable?",
       "gold": [
         "contracts_act-31"
@@ -975,6 +1041,7 @@
     },
     {
       "id": "q049",
+      "split": "easy",
       "question": "What is novation of a contract?",
       "gold": [
         "contracts_act-63"
@@ -995,6 +1062,7 @@
     },
     {
       "id": "q050",
+      "split": "easy",
       "question": "What is a contingent contract?",
       "gold": [
         "contracts_act-32"
@@ -1015,6 +1083,7 @@
     },
     {
       "id": "q051",
+      "split": "easy",
       "question": "Is a contract voidable if consent was obtained by fraud?",
       "gold": [
         "contracts_act-19"
@@ -1032,6 +1101,608 @@
         "contracts_act-17"
       ],
       "rank": 1
+    },
+    {
+      "id": "h001",
+      "split": "hard",
+      "question": "My boss fired me yesterday with no warning after three years. Was that allowed?",
+      "gold": [
+        "employment_act-12",
+        "employment_act-13"
+      ],
+      "ranked": [
+        "employment_act-42",
+        "employment_act-14",
+        "employment_act-15",
+        "employment_act-60K",
+        "employment_act-12",
+        "employment_act-40",
+        "employment_act-65",
+        "employment_act-66",
+        "employment_act-90B",
+        "employment_act-57B"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "h002",
+      "split": "hard",
+      "question": "I'm expecting a baby. Can my company let me go because of it?",
+      "gold": [
+        "employment_act-41A",
+        "employment_act-42"
+      ],
+      "ranked": [
+        "employment_act-40",
+        "employment_act-41A",
+        "employment_act-37",
+        "employment_act-39",
+        "employment_act-2",
+        "employment_act-60F",
+        "employment_act-27",
+        "contracts_act-24",
+        "employment_act-81",
+        "employment_act-12"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "h003",
+      "split": "hard",
+      "question": "My salary was cut for a loan I never took. Is that legal?",
+      "gold": [
+        "employment_act-24"
+      ],
+      "ranked": [
+        "employment_act-60E",
+        "employment_act-15",
+        "employment_act-25",
+        "employment_act-14",
+        "employment_act-23",
+        "contracts_act-73",
+        "contracts_act-61",
+        "employment_act-20",
+        "employment_act-69B",
+        "employment_act-13"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h004",
+      "split": "hard",
+      "question": "Do I have to work on public holidays?",
+      "gold": [
+        "employment_act-60D"
+      ],
+      "ranked": [
+        "employment_act-60D",
+        "employment_act-60",
+        "employment_act-60I",
+        "employment_act-60A",
+        "employment_act-16",
+        "employment_act-28",
+        "employment_act-19",
+        "employment_act-100",
+        "employment_act-59",
+        "employment_act-60E"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h005",
+      "split": "hard",
+      "question": "My manager keeps making sexual comments at me. What must the company do about it?",
+      "gold": [
+        "employment_act-81B",
+        "employment_act-81C",
+        "employment_act-81H"
+      ],
+      "ranked": [
+        "employment_act-81D",
+        "employment_act-81A",
+        "employment_act-81C",
+        "employment_act-81B",
+        "employment_act-81H",
+        "employment_act-81F",
+        "employment_act-81E",
+        "employment_act-2",
+        "employment_act-32",
+        "employment_act-69"
+      ],
+      "rank": 3
+    },
+    {
+      "id": "h006",
+      "split": "hard",
+      "question": "Can I ask to work from home or change my hours?",
+      "gold": [
+        "employment_act-60P",
+        "employment_act-60Q"
+      ],
+      "ranked": [
+        "employment_act-60A",
+        "employment_act-60",
+        "employment_act-60C",
+        "employment_act-59",
+        "employment_act-60P",
+        "employment_act-60D",
+        "employment_act-19",
+        "contracts_act-49",
+        "employment_act-15",
+        "employment_act-60Q"
+      ],
+      "rank": 5
+    },
+    {
+      "id": "h007",
+      "split": "hard",
+      "question": "If a company goes bust, who gets paid first, the bank or the workers?",
+      "gold": [
+        "employment_act-31"
+      ],
+      "ranked": [
+        "employment_act-31",
+        "employment_act-25",
+        "employment_act-87A",
+        "contracts_act-51",
+        "employment_act-39",
+        "employment_act-101C",
+        "employment_act-60B",
+        "employment_act-73",
+        "employment_act-25A",
+        "employment_act-100"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h008",
+      "split": "hard",
+      "question": "How soon after I quit must I get my final salary?",
+      "gold": [
+        "employment_act-20"
+      ],
+      "ranked": [
+        "employment_act-19",
+        "employment_act-20",
+        "employment_act-14",
+        "employment_act-60E",
+        "employment_act-42",
+        "employment_act-15",
+        "employment_act-37",
+        "employment_act-25A",
+        "employment_act-40",
+        "employment_act-18A"
+      ],
+      "rank": 2
+    },
+    {
+      "id": "h009",
+      "split": "hard",
+      "question": "A shop keeps asking for my IC number to give me loyalty points. Do they need my permission?",
+      "gold": [
+        "pdpa-6",
+        "pdpa-7"
+      ],
+      "ranked": [
+        "pdpa-128",
+        "pdpa-125",
+        "pdpa-66",
+        "pdpa-121",
+        "contracts_act-166",
+        "pdpa-122",
+        "pdpa-111",
+        "pdpa-120",
+        "pdpa-113",
+        "pdpa-117"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h010",
+      "split": "hard",
+      "question": "A company leaked my details to a telemarketer. Who do I report it to?",
+      "gold": [
+        "pdpa-104"
+      ],
+      "ranked": [
+        "pdpa-130",
+        "pdpa-113",
+        "pdpa-38",
+        "pdpa-140",
+        "pdpa-37",
+        "pdpa-104",
+        "pdpa-105",
+        "pdpa-120",
+        "pdpa-94",
+        "contracts_act-19"
+      ],
+      "rank": 6
+    },
+    {
+      "id": "h011",
+      "split": "hard",
+      "question": "Can my bank pass my information to its head office overseas?",
+      "gold": [
+        "pdpa-129"
+      ],
+      "ranked": [
+        "pdpa-129",
+        "pdpa-67",
+        "employment_act-60O",
+        "employment_act-57B",
+        "pdpa-117",
+        "employment_act-60K",
+        "pdpa-125",
+        "pdpa-66",
+        "employment_act-25",
+        "pdpa-118"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h012",
+      "split": "hard",
+      "question": "How long must a company keep customer records before deleting them?",
+      "gold": [
+        "pdpa-10"
+      ],
+      "ranked": [
+        "pdpa-10",
+        "pdpa-44",
+        "employment_act-61",
+        "pdpa-35",
+        "pdpa-31",
+        "pdpa-43",
+        "pdpa-42",
+        "pdpa-68",
+        "pdpa-130",
+        "pdpa-38"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h013",
+      "split": "hard",
+      "question": "I asked a company for my data and they ignored me. Is that allowed?",
+      "gold": [
+        "pdpa-31",
+        "pdpa-32"
+      ],
+      "ranked": [
+        "pdpa-32",
+        "pdpa-36",
+        "pdpa-33",
+        "pdpa-37",
+        "pdpa-106",
+        "pdpa-31",
+        "pdpa-30",
+        "pdpa-35",
+        "pdpa-43",
+        "pdpa-130"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h014",
+      "split": "hard",
+      "question": "Is information about my health or religion treated more strictly?",
+      "gold": [
+        "pdpa-40",
+        "pdpa-4"
+      ],
+      "ranked": [
+        "pdpa-40",
+        "pdpa-4",
+        "pdpa-39",
+        "pdpa-7",
+        "pdpa-45",
+        "pdpa-42",
+        "pdpa-140",
+        "pdpa-8",
+        "pdpa-102",
+        "pdpa-1"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h015",
+      "split": "hard",
+      "question": "Is it a crime to sell people's personal data without permission?",
+      "gold": [
+        "pdpa-130"
+      ],
+      "ranked": [
+        "pdpa-130",
+        "pdpa-6",
+        "pdpa-43",
+        "pdpa-32",
+        "pdpa-39",
+        "pdpa-8",
+        "pdpa-40",
+        "pdpa-120",
+        "pdpa-9",
+        "pdpa-121"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h016",
+      "split": "hard",
+      "question": "Hackers stole customer data from a firm. What protection duty did the firm have?",
+      "gold": [
+        "pdpa-9"
+      ],
+      "ranked": [
+        "pdpa-133",
+        "pdpa-115",
+        "pdpa-113",
+        "pdpa-9",
+        "pdpa-29",
+        "pdpa-140",
+        "pdpa-121",
+        "pdpa-4",
+        "pdpa-130",
+        "pdpa-125"
+      ],
+      "rank": 4
+    },
+    {
+      "id": "h017",
+      "split": "hard",
+      "question": "My landlord threatened to call the police unless I signed. Can I cancel the agreement?",
+      "gold": [
+        "contracts_act-15",
+        "contracts_act-19"
+      ],
+      "ranked": [
+        "pdpa-95",
+        "contracts_act-25",
+        "contracts_act-5",
+        "contracts_act-153",
+        "pdpa-19",
+        "pdpa-132",
+        "contracts_act-156",
+        "pdpa-120",
+        "contracts_act-20",
+        "contracts_act-83"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h018",
+      "split": "hard",
+      "question": "A 16-year-old signed a car purchase agreement. Is it binding?",
+      "gold": [
+        "contracts_act-11"
+      ],
+      "ranked": [
+        "contracts_act-131",
+        "contracts_act-190",
+        "contracts_act-26",
+        "contracts_act-24",
+        "contracts_act-17",
+        "contracts_act-132",
+        "contracts_act-29",
+        "contracts_act-181",
+        "pdpa-125",
+        "contracts_act-183"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h019",
+      "split": "hard",
+      "question": "I promised to repay my friend but he gave nothing in return. Is my promise enforceable?",
+      "gold": [
+        "contracts_act-26",
+        "contracts_act-10"
+      ],
+      "ranked": [
+        "contracts_act-64",
+        "contracts_act-98",
+        "contracts_act-130",
+        "contracts_act-44",
+        "contracts_act-52",
+        "contracts_act-51",
+        "contracts_act-73",
+        "contracts_act-79",
+        "contracts_act-96",
+        "contracts_act-127"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h020",
+      "split": "hard",
+      "question": "I signed a deal saying I can never work in my industry again. Is that valid?",
+      "gold": [
+        "contracts_act-28"
+      ],
+      "ranked": [
+        "contracts_act-19",
+        "employment_act-15",
+        "employment_act-29",
+        "employment_act-12",
+        "employment_act-78",
+        "employment_act-58A",
+        "contracts_act-151",
+        "contracts_act-40",
+        "contracts_act-173",
+        "employment_act-60M"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h021",
+      "split": "hard",
+      "question": "I lent my laptop to a colleague and he broke it. Who pays?",
+      "gold": [
+        "contracts_act-104",
+        "contracts_act-105"
+      ],
+      "ranked": [
+        "contracts_act-73",
+        "contracts_act-70",
+        "contracts_act-74",
+        "pdpa-91",
+        "pdpa-119",
+        "contracts_act-75",
+        "pdpa-125",
+        "employment_act-25",
+        "contracts_act-112",
+        "contracts_act-44"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h022",
+      "split": "hard",
+      "question": "A friend guaranteed my loan and the bank changed the terms without telling him. Is he still liable?",
+      "gold": [
+        "contracts_act-86"
+      ],
+      "ranked": [
+        "contracts_act-97",
+        "contracts_act-79",
+        "contracts_act-96",
+        "contracts_act-98",
+        "contracts_act-95",
+        "contracts_act-90",
+        "contracts_act-86",
+        "contracts_act-82",
+        "contracts_act-83",
+        "contracts_act-93"
+      ],
+      "rank": 7
+    },
+    {
+      "id": "h023",
+      "split": "hard",
+      "question": "My agent made a deal beyond what I allowed him to do. Am I bound by it?",
+      "gold": [
+        "contracts_act-180",
+        "contracts_act-181"
+      ],
+      "ranked": [
+        "contracts_act-180",
+        "contracts_act-181",
+        "contracts_act-165",
+        "contracts_act-183",
+        "contracts_act-20",
+        "contracts_act-190",
+        "contracts_act-143",
+        "contracts_act-141",
+        "contracts_act-172",
+        "contracts_act-182"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h024",
+      "split": "hard",
+      "question": "A seller lied about the car's condition. Can I cancel the deal?",
+      "gold": [
+        "contracts_act-19",
+        "contracts_act-17",
+        "contracts_act-18"
+      ],
+      "ranked": [
+        "contracts_act-19",
+        "contracts_act-168",
+        "contracts_act-17",
+        "contracts_act-21",
+        "contracts_act-28",
+        "pdpa-130",
+        "contracts_act-95",
+        "contracts_act-174",
+        "contracts_act-122",
+        "contracts_act-182"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h025",
+      "split": "hard",
+      "question": "I bet money on a football match with a friend. Can he sue me if I don't pay?",
+      "gold": [
+        "contracts_act-31"
+      ],
+      "ranked": [
+        "contracts_act-31",
+        "contracts_act-98",
+        "contracts_act-70",
+        "contracts_act-73",
+        "contracts_act-121",
+        "contracts_act-90",
+        "contracts_act-107",
+        "contracts_act-74",
+        "contracts_act-110",
+        "contracts_act-17"
+      ],
+      "rank": 1
+    },
+    {
+      "id": "h026",
+      "split": "hard",
+      "question": "The supplier delivered late but I accepted the goods. Can I still claim damages?",
+      "gold": [
+        "contracts_act-56"
+      ],
+      "ranked": [
+        "contracts_act-74",
+        "contracts_act-121",
+        "contracts_act-95",
+        "contracts_act-73",
+        "contracts_act-98",
+        "contracts_act-175",
+        "contracts_act-120",
+        "contracts_act-182",
+        "contracts_act-127",
+        "contracts_act-39"
+      ],
+      "rank": null
+    },
+    {
+      "id": "h027",
+      "split": "hard",
+      "question": "My contract says I pay a fixed penalty if I leave early. Is that enforceable?",
+      "gold": [
+        "contracts_act-75"
+      ],
+      "ranked": [
+        "employment_act-78",
+        "contracts_act-34",
+        "employment_act-21",
+        "employment_act-14",
+        "contracts_act-36",
+        "contracts_act-74",
+        "employment_act-15",
+        "employment_act-27",
+        "contracts_act-75",
+        "employment_act-20"
+      ],
+      "rank": 9
+    },
+    {
+      "id": "h028",
+      "split": "hard",
+      "question": "What if both of us were mistaken about what we were buying?",
+      "gold": [
+        "contracts_act-21"
+      ],
+      "ranked": [
+        "contracts_act-122",
+        "contracts_act-18",
+        "contracts_act-133",
+        "contracts_act-17",
+        "contracts_act-112",
+        "contracts_act-182",
+        "contracts_act-120",
+        "contracts_act-44",
+        "contracts_act-73",
+        "contracts_act-95"
+      ],
+      "rank": null
     }
   ]
 }

@@ -1,57 +1,85 @@
-{"id": "q001", "question": "How many days of paid annual leave does an employee get after more than five years of service?", "gold": ["employment_act-60E"], "answerable": true}
-{"id": "q002", "question": "How long is maternity leave?", "gold": ["employment_act-37"], "answerable": true}
-{"id": "q003", "question": "How many paid public holidays is an employee entitled to each year?", "gold": ["employment_act-60D"], "answerable": true}
-{"id": "q004", "question": "What is the maximum number of working hours in a week?", "gold": ["employment_act-60A"], "answerable": true}
-{"id": "q005", "question": "How much notice must an employer give to terminate a contract of service?", "gold": ["employment_act-12"], "answerable": true}
-{"id": "q006", "question": "Can an employer dismiss an employee without notice for misconduct?", "gold": ["employment_act-14"], "answerable": true}
-{"id": "q007", "question": "By when must wages be paid after the end of the wage period?", "gold": ["employment_act-19"], "answerable": true}
-{"id": "q008", "question": "What deductions is an employer allowed to make from an employee's wages?", "gold": ["employment_act-24"], "answerable": true}
-{"id": "q009", "question": "How many days of paid sick leave is an employee entitled to?", "gold": ["employment_act-60F"], "answerable": true}
-{"id": "q010", "question": "Can an employer terminate a pregnant employee?", "gold": ["employment_act-41A"], "answerable": true}
-{"id": "q011", "question": "What must an employer pay if an employee works on a rest day?", "gold": ["employment_act-60"], "answerable": true}
-{"id": "q012", "question": "What is the overtime rate of pay?", "gold": ["employment_act-60A"], "answerable": true}
-{"id": "q013", "question": "What should I do if I am sexually harassed at work?", "gold": ["employment_act-81B", "employment_act-81D"], "answerable": true}
-{"id": "q014", "question": "Can an employee request flexible working arrangements?", "gold": ["employment_act-60P", "employment_act-60Q"], "answerable": true}
-{"id": "q015", "question": "What is the punishment for forcing someone to work against their will?", "gold": ["employment_act-90B"], "answerable": true}
-{"id": "q016", "question": "Where do I complain if my employer does not pay my wages?", "gold": ["employment_act-69"], "answerable": true}
-{"id": "q017", "question": "Must a contract of service be in writing?", "gold": ["employment_act-10"], "answerable": true}
-{"id": "q018", "question": "What benefits must an employer pay if terminating an employee because of redundancy?", "gold": ["employment_act-60J"], "answerable": true}
-{"id": "q019", "question": "What are the personal data protection principles?", "gold": ["pdpa-5"], "answerable": true}
-{"id": "q020", "question": "Can my personal data be disclosed to others without my consent?", "gold": ["pdpa-8", "pdpa-39"], "answerable": true}
-{"id": "q021", "question": "How do I ask a company for a copy of my personal data?", "gold": ["pdpa-30", "pdpa-31"], "answerable": true}
-{"id": "q022", "question": "Can I ask a company to correct my personal data?", "gold": ["pdpa-34"], "answerable": true}
-{"id": "q023", "question": "What counts as sensitive personal data?", "gold": ["pdpa-4"], "answerable": true}
-{"id": "q024", "question": "Can a company send my personal data to another country?", "gold": ["pdpa-129"], "answerable": true}
-{"id": "q025", "question": "How long can a company keep my personal data?", "gold": ["pdpa-10"], "answerable": true}
-{"id": "q026", "question": "What security steps must a company take to protect personal data?", "gold": ["pdpa-9"], "answerable": true}
-{"id": "q027", "question": "How do I file a complaint about misuse of my personal data?", "gold": ["pdpa-104"], "answerable": true}
-{"id": "q028", "question": "What is the penalty for unlawfully collecting or selling personal data?", "gold": ["pdpa-130"], "answerable": true}
-{"id": "q029", "question": "Can I withdraw my consent for a company to process my data?", "gold": ["pdpa-38"], "answerable": true}
-{"id": "q030", "question": "Which organisations must register as data users?", "gold": ["pdpa-14"], "answerable": true}
-{"id": "q031", "question": "Does the personal data law apply to the government?", "gold": ["pdpa-3"], "answerable": true}
-{"id": "q032", "question": "Can I stop a company from using my data for direct marketing?", "gold": ["pdpa-43"], "answerable": true}
-{"id": "q033", "question": "What does the Personal Data Protection Commissioner do?", "gold": ["pdpa-48"], "answerable": true}
-{"id": "q034", "question": "What is coercion under contract law?", "gold": ["contracts_act-15"], "answerable": true}
-{"id": "q035", "question": "What is undue influence?", "gold": ["contracts_act-16"], "answerable": true}
-{"id": "q036", "question": "What is a contract of guarantee?", "gold": ["contracts_act-79"], "answerable": true}
-{"id": "q037", "question": "When is an agreement void because it restrains someone's trade or profession?", "gold": ["contracts_act-28"], "answerable": true}
-{"id": "q038", "question": "Who is competent to enter into a contract?", "gold": ["contracts_act-11"], "answerable": true}
-{"id": "q039", "question": "Until when can a proposal be revoked?", "gold": ["contracts_act-5"], "answerable": true}
-{"id": "q040", "question": "What compensation can I claim if the other party breaks the contract?", "gold": ["contracts_act-74"], "answerable": true}
-{"id": "q041", "question": "What is a contract of indemnity?", "gold": ["contracts_act-77"], "answerable": true}
-{"id": "q042", "question": "Is an agreement without consideration valid?", "gold": ["contracts_act-26"], "answerable": true}
-{"id": "q043", "question": "What duty of care does a bailee owe?", "gold": ["contracts_act-104"], "answerable": true}
-{"id": "q044", "question": "What is a pledge and who is a pawnee?", "gold": ["contracts_act-125"], "answerable": true}
-{"id": "q045", "question": "When does an agent's authority come to an end?", "gold": ["contracts_act-154"], "answerable": true}
-{"id": "q046", "question": "What happens if a contract becomes impossible to perform?", "gold": ["contracts_act-57"], "answerable": true}
-{"id": "q047", "question": "What must an agent do when conducting the principal's business?", "gold": ["contracts_act-164"], "answerable": true}
-{"id": "q048", "question": "Are wagering agreements enforceable?", "gold": ["contracts_act-31"], "answerable": true}
-{"id": "q049", "question": "What is novation of a contract?", "gold": ["contracts_act-63"], "answerable": true}
-{"id": "q050", "question": "What is a contingent contract?", "gold": ["contracts_act-32"], "answerable": true}
-{"id": "q051", "question": "Is a contract voidable if consent was obtained by fraud?", "gold": ["contracts_act-19"], "answerable": true}
-{"id": "q052", "question": "What is the minimum wage in Malaysia?", "gold": [], "answerable": false}
-{"id": "q053", "question": "How do I register a new company in Malaysia?", "gold": [], "answerable": false}
-{"id": "q054", "question": "What is the punishment for theft?", "gold": [], "answerable": false}
-{"id": "q055", "question": "How long does a divorce take in Malaysia?", "gold": [], "answerable": false}
-{"id": "q056", "question": "Can I sue someone for defamation?", "gold": [], "answerable": false}
-{"id": "q057", "question": "What is the income tax rate for individuals?", "gold": [], "answerable": false}
+{"id": "q001", "question": "How many days of paid annual leave does an employee get after more than five years of service?", "gold": ["employment_act-60E"], "answerable": true, "split": "easy"}
+{"id": "q002", "question": "How long is maternity leave?", "gold": ["employment_act-37"], "answerable": true, "split": "easy"}
+{"id": "q003", "question": "How many paid public holidays is an employee entitled to each year?", "gold": ["employment_act-60D"], "answerable": true, "split": "easy"}
+{"id": "q004", "question": "What is the maximum number of working hours in a week?", "gold": ["employment_act-60A"], "answerable": true, "split": "easy"}
+{"id": "q005", "question": "How much notice must an employer give to terminate a contract of service?", "gold": ["employment_act-12"], "answerable": true, "split": "easy"}
+{"id": "q006", "question": "Can an employer dismiss an employee without notice for misconduct?", "gold": ["employment_act-14"], "answerable": true, "split": "easy"}
+{"id": "q007", "question": "By when must wages be paid after the end of the wage period?", "gold": ["employment_act-19"], "answerable": true, "split": "easy"}
+{"id": "q008", "question": "What deductions is an employer allowed to make from an employee's wages?", "gold": ["employment_act-24"], "answerable": true, "split": "easy"}
+{"id": "q009", "question": "How many days of paid sick leave is an employee entitled to?", "gold": ["employment_act-60F"], "answerable": true, "split": "easy"}
+{"id": "q010", "question": "Can an employer terminate a pregnant employee?", "gold": ["employment_act-41A"], "answerable": true, "split": "easy"}
+{"id": "q011", "question": "What must an employer pay if an employee works on a rest day?", "gold": ["employment_act-60"], "answerable": true, "split": "easy"}
+{"id": "q012", "question": "What is the overtime rate of pay?", "gold": ["employment_act-60A"], "answerable": true, "split": "easy"}
+{"id": "q013", "question": "What should I do if I am sexually harassed at work?", "gold": ["employment_act-81B", "employment_act-81D"], "answerable": true, "split": "easy"}
+{"id": "q014", "question": "Can an employee request flexible working arrangements?", "gold": ["employment_act-60P", "employment_act-60Q"], "answerable": true, "split": "easy"}
+{"id": "q015", "question": "What is the punishment for forcing someone to work against their will?", "gold": ["employment_act-90B"], "answerable": true, "split": "easy"}
+{"id": "q016", "question": "Where do I complain if my employer does not pay my wages?", "gold": ["employment_act-69"], "answerable": true, "split": "easy"}
+{"id": "q017", "question": "Must a contract of service be in writing?", "gold": ["employment_act-10"], "answerable": true, "split": "easy"}
+{"id": "q018", "question": "What benefits must an employer pay if terminating an employee because of redundancy?", "gold": ["employment_act-60J"], "answerable": true, "split": "easy"}
+{"id": "q019", "question": "What are the personal data protection principles?", "gold": ["pdpa-5"], "answerable": true, "split": "easy"}
+{"id": "q020", "question": "Can my personal data be disclosed to others without my consent?", "gold": ["pdpa-8", "pdpa-39"], "answerable": true, "split": "easy"}
+{"id": "q021", "question": "How do I ask a company for a copy of my personal data?", "gold": ["pdpa-30", "pdpa-31"], "answerable": true, "split": "easy"}
+{"id": "q022", "question": "Can I ask a company to correct my personal data?", "gold": ["pdpa-34"], "answerable": true, "split": "easy"}
+{"id": "q023", "question": "What counts as sensitive personal data?", "gold": ["pdpa-4"], "answerable": true, "split": "easy"}
+{"id": "q024", "question": "Can a company send my personal data to another country?", "gold": ["pdpa-129"], "answerable": true, "split": "easy"}
+{"id": "q025", "question": "How long can a company keep my personal data?", "gold": ["pdpa-10"], "answerable": true, "split": "easy"}
+{"id": "q026", "question": "What security steps must a company take to protect personal data?", "gold": ["pdpa-9"], "answerable": true, "split": "easy"}
+{"id": "q027", "question": "How do I file a complaint about misuse of my personal data?", "gold": ["pdpa-104"], "answerable": true, "split": "easy"}
+{"id": "q028", "question": "What is the penalty for unlawfully collecting or selling personal data?", "gold": ["pdpa-130"], "answerable": true, "split": "easy"}
+{"id": "q029", "question": "Can I withdraw my consent for a company to process my data?", "gold": ["pdpa-38"], "answerable": true, "split": "easy"}
+{"id": "q030", "question": "Which organisations must register as data users?", "gold": ["pdpa-14"], "answerable": true, "split": "easy"}
+{"id": "q031", "question": "Does the personal data law apply to the government?", "gold": ["pdpa-3"], "answerable": true, "split": "easy"}
+{"id": "q032", "question": "Can I stop a company from using my data for direct marketing?", "gold": ["pdpa-43"], "answerable": true, "split": "easy"}
+{"id": "q033", "question": "What does the Personal Data Protection Commissioner do?", "gold": ["pdpa-48"], "answerable": true, "split": "easy"}
+{"id": "q034", "question": "What is coercion under contract law?", "gold": ["contracts_act-15"], "answerable": true, "split": "easy"}
+{"id": "q035", "question": "What is undue influence?", "gold": ["contracts_act-16"], "answerable": true, "split": "easy"}
+{"id": "q036", "question": "What is a contract of guarantee?", "gold": ["contracts_act-79"], "answerable": true, "split": "easy"}
+{"id": "q037", "question": "When is an agreement void because it restrains someone's trade or profession?", "gold": ["contracts_act-28"], "answerable": true, "split": "easy"}
+{"id": "q038", "question": "Who is competent to enter into a contract?", "gold": ["contracts_act-11"], "answerable": true, "split": "easy"}
+{"id": "q039", "question": "Until when can a proposal be revoked?", "gold": ["contracts_act-5"], "answerable": true, "split": "easy"}
+{"id": "q040", "question": "What compensation can I claim if the other party breaks the contract?", "gold": ["contracts_act-74"], "answerable": true, "split": "easy"}
+{"id": "q041", "question": "What is a contract of indemnity?", "gold": ["contracts_act-77"], "answerable": true, "split": "easy"}
+{"id": "q042", "question": "Is an agreement without consideration valid?", "gold": ["contracts_act-26"], "answerable": true, "split": "easy"}
+{"id": "q043", "question": "What duty of care does a bailee owe?", "gold": ["contracts_act-104"], "answerable": true, "split": "easy"}
+{"id": "q044", "question": "What is a pledge and who is a pawnee?", "gold": ["contracts_act-125"], "answerable": true, "split": "easy"}
+{"id": "q045", "question": "When does an agent's authority come to an end?", "gold": ["contracts_act-154"], "answerable": true, "split": "easy"}
+{"id": "q046", "question": "What happens if a contract becomes impossible to perform?", "gold": ["contracts_act-57"], "answerable": true, "split": "easy"}
+{"id": "q047", "question": "What must an agent do when conducting the principal's business?", "gold": ["contracts_act-164"], "answerable": true, "split": "easy"}
+{"id": "q048", "question": "Are wagering agreements enforceable?", "gold": ["contracts_act-31"], "answerable": true, "split": "easy"}
+{"id": "q049", "question": "What is novation of a contract?", "gold": ["contracts_act-63"], "answerable": true, "split": "easy"}
+{"id": "q050", "question": "What is a contingent contract?", "gold": ["contracts_act-32"], "answerable": true, "split": "easy"}
+{"id": "q051", "question": "Is a contract voidable if consent was obtained by fraud?", "gold": ["contracts_act-19"], "answerable": true, "split": "easy"}
+{"id": "q052", "question": "What is the minimum wage in Malaysia?", "gold": [], "answerable": false, "split": "easy"}
+{"id": "q053", "question": "How do I register a new company in Malaysia?", "gold": [], "answerable": false, "split": "easy"}
+{"id": "q054", "question": "What is the punishment for theft?", "gold": [], "answerable": false, "split": "easy"}
+{"id": "q055", "question": "How long does a divorce take in Malaysia?", "gold": [], "answerable": false, "split": "easy"}
+{"id": "q056", "question": "Can I sue someone for defamation?", "gold": [], "answerable": false, "split": "easy"}
+{"id": "q057", "question": "What is the income tax rate for individuals?", "gold": [], "answerable": false, "split": "easy"}
+{"id": "h001", "question": "My boss fired me yesterday with no warning after three years. Was that allowed?", "gold": ["employment_act-12", "employment_act-13"], "answerable": true, "split": "hard"}
+{"id": "h002", "question": "I'm expecting a baby. Can my company let me go because of it?", "gold": ["employment_act-41A", "employment_act-42"], "answerable": true, "split": "hard"}
+{"id": "h003", "question": "My salary was cut for a loan I never took. Is that legal?", "gold": ["employment_act-24"], "answerable": true, "split": "hard"}
+{"id": "h004", "question": "Do I have to work on public holidays?", "gold": ["employment_act-60D"], "answerable": true, "split": "hard"}
+{"id": "h005", "question": "My manager keeps making sexual comments at me. What must the company do about it?", "gold": ["employment_act-81B", "employment_act-81C", "employment_act-81H"], "answerable": true, "split": "hard"}
+{"id": "h006", "question": "Can I ask to work from home or change my hours?", "gold": ["employment_act-60P", "employment_act-60Q"], "answerable": true, "split": "hard"}
+{"id": "h007", "question": "If a company goes bust, who gets paid first, the bank or the workers?", "gold": ["employment_act-31"], "answerable": true, "split": "hard"}
+{"id": "h008", "question": "How soon after I quit must I get my final salary?", "gold": ["employment_act-20"], "answerable": true, "split": "hard"}
+{"id": "h009", "question": "A shop keeps asking for my IC number to give me loyalty points. Do they need my permission?", "gold": ["pdpa-6", "pdpa-7"], "answerable": true, "split": "hard"}
+{"id": "h010", "question": "A company leaked my details to a telemarketer. Who do I report it to?", "gold": ["pdpa-104"], "answerable": true, "split": "hard"}
+{"id": "h011", "question": "Can my bank pass my information to its head office overseas?", "gold": ["pdpa-129"], "answerable": true, "split": "hard"}
+{"id": "h012", "question": "How long must a company keep customer records before deleting them?", "gold": ["pdpa-10"], "answerable": true, "split": "hard"}
+{"id": "h013", "question": "I asked a company for my data and they ignored me. Is that allowed?", "gold": ["pdpa-31", "pdpa-32"], "answerable": true, "split": "hard"}
+{"id": "h014", "question": "Is information about my health or religion treated more strictly?", "gold": ["pdpa-40", "pdpa-4"], "answerable": true, "split": "hard"}
+{"id": "h015", "question": "Is it a crime to sell people's personal data without permission?", "gold": ["pdpa-130"], "answerable": true, "split": "hard"}
+{"id": "h016", "question": "Hackers stole customer data from a firm. What protection duty did the firm have?", "gold": ["pdpa-9"], "answerable": true, "split": "hard"}
+{"id": "h017", "question": "My landlord threatened to call the police unless I signed. Can I cancel the agreement?", "gold": ["contracts_act-15", "contracts_act-19"], "answerable": true, "split": "hard"}
+{"id": "h018", "question": "A 16-year-old signed a car purchase agreement. Is it binding?", "gold": ["contracts_act-11"], "answerable": true, "split": "hard"}
+{"id": "h019", "question": "I promised to repay my friend but he gave nothing in return. Is my promise enforceable?", "gold": ["contracts_act-26", "contracts_act-10"], "answerable": true, "split": "hard"}
+{"id": "h020", "question": "I signed a deal saying I can never work in my industry again. Is that valid?", "gold": ["contracts_act-28"], "answerable": true, "split": "hard"}
+{"id": "h021", "question": "I lent my laptop to a colleague and he broke it. Who pays?", "gold": ["contracts_act-104", "contracts_act-105"], "answerable": true, "split": "hard"}
+{"id": "h022", "question": "A friend guaranteed my loan and the bank changed the terms without telling him. Is he still liable?", "gold": ["contracts_act-86"], "answerable": true, "split": "hard"}
+{"id": "h023", "question": "My agent made a deal beyond what I allowed him to do. Am I bound by it?", "gold": ["contracts_act-180", "contracts_act-181"], "answerable": true, "split": "hard"}
+{"id": "h024", "question": "A seller lied about the car's condition. Can I cancel the deal?", "gold": ["contracts_act-19", "contracts_act-17", "contracts_act-18"], "answerable": true, "split": "hard"}
+{"id": "h025", "question": "I bet money on a football match with a friend. Can he sue me if I don't pay?", "gold": ["contracts_act-31"], "answerable": true, "split": "hard"}
+{"id": "h026", "question": "The supplier delivered late but I accepted the goods. Can I still claim damages?", "gold": ["contracts_act-56"], "answerable": true, "split": "hard"}
+{"id": "h027", "question": "My contract says I pay a fixed penalty if I leave early. Is that enforceable?", "gold": ["contracts_act-75"], "answerable": true, "split": "hard"}
+{"id": "h028", "question": "What if both of us were mistaken about what we were buying?", "gold": ["contracts_act-21"], "answerable": true, "split": "hard"}
