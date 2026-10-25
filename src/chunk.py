@@ -4,9 +4,31 @@ from collections import Counter
 from pathlib import Path
 
 PROCESSED = Path("data/processed")
-STEM = "employment_act"
-ACT_NAME = "Employment Act 1955"
+MAX_GAP = 30  # real Acts skip numbers (e.g. 44A -> 57)
 SECTION_RE = re.compile(r"^(\d+[A-Z]?)\.(?:\s|$)")
+
+ACTS = [
+    {
+        "stem": "employment_act",
+        "name": "Employment Act 1955",
+        "junk": [],
+        "stop": [r"^(FIRST|SECOND|THIRD)?\s*SCHEDULE\b"],
+    },
+    {
+        "stem": "pdpa",
+        "name": "Personal Data Protection Act 2010",
+        "junk": [],
+        "stop": [r"^LAWS OF MALAYSIA$", r"^LIST OF AMENDMENTS"],
+    },
+    {
+        "stem": "contracts_act",
+        "name": "Contracts Act 1950",
+        "junk": [r"^Unannotated Statutes", r"^ACT 136", r"^Page \d+$", r"^1950$",
+                 r"^Part [IVXL]+ ", r"^\(Click"],
+        "stop": [r"^Appendix$", r"^LIST OF AMENDMENTS"],
+        "inline_heading": True,  # PDF prints the title on the number line
+    },
+]
 
 
 def norm(line):
@@ -14,7 +36,7 @@ def norm(line):
 
 
 def page_lines(page):
-    return [l.strip() for l in page["text"].splitlines() if l.strip()]
+    return [re.sub(r"\s+", " ", l).strip() for l in page["text"].splitlines() if l.strip()]
 
 
 def find_boilerplate(pages, edge=4, threshold=0.3):
@@ -26,8 +48,9 @@ def find_boilerplate(pages, edge=4, threshold=0.3):
     return {k for k, c in counts.items() if c >= threshold * len(pages)}
 
 
-def clean_pages(pages, edge=4):
+def clean_pages(pages, junk_patterns, edge=4):
     bp = find_boilerplate(pages, edge)
+    junk = [re.compile(p) for p in junk_patterns]
     result = []
     for p in pages:
         lines = page_lines(p)
@@ -35,6 +58,8 @@ def clean_pages(pages, edge=4):
         for i, line in enumerate(lines):
             at_edge = i < edge or i >= n - edge
             if at_edge and norm(line) in bp:
+                continue
+            if any(j.match(line) for j in junk):
                 continue
             result.append((p["page"], line))
     return result
@@ -68,11 +93,8 @@ def unwrap(lines):
     return text
 
 
-MAX_GAP = 30  # real Acts skip numbers (e.g. 44A -> 57)
-
-
 def find_body_start(lines):
-    """Section 1 of every Malaysian Act contains 'This Act may be cited as'. TOC doesn't."""
+    """Section 1 of every Malaysian Act contains 'may be cited'. The TOC doesn't."""
     for i, (_, line) in enumerate(lines):
         if re.match(r"^1\.(?:\s|$)", line):
             nearby = " ".join(l for _, l in lines[i:i + 3])
@@ -81,16 +103,16 @@ def find_body_start(lines):
     raise ValueError("could not find section 1")
 
 
-def split_sections(lines):
+def split_sections(lines, stop_patterns):
+    stops = [re.compile(p) for p in stop_patterns]
     start = find_body_start(lines)
     before = [l for _, l in lines[max(0, start - 6):start]]
-    body = lines[start:]
     done = []
     cur = {"section": None, "page": 0, "heading": "", "lines": before}
     last = 0
-    for page, line in body:
-        if re.match(r"^(FIRST|SECOND|THIRD)?\s*SCHEDULE\b", line):
-            break  # schedules restart numbering, handle later
+    for page, line in lines[start:]:
+        if any(s.match(line) for s in stops):
+            break
         m = SECTION_RE.match(line)
         if m:
             num = int(re.match(r"\d+", m.group(1)).group())
@@ -107,27 +129,46 @@ def split_sections(lines):
     return done
 
 
-def main():
-    pages = json.load(open(PROCESSED / f"{STEM}.json", encoding="utf-8"))
-    sections = split_sections(clean_pages(pages))
-    out = PROCESSED / f"{STEM}_chunks.jsonl"
-    with open(out, "w", encoding="utf-8") as f:
+def inline_heading(section):
+    """Some PDFs print the title on the number line: '3. Communication of proposals'."""
+    first = section["lines"][0]
+    rest = SECTION_RE.sub("", first, count=1).strip()
+    if rest and not rest.startswith("(") and len(rest) < 150:
+        section["heading"] = rest
+        section["lines"] = section["lines"][1:] or [first]
+
+
+def chunk_act(act):
+    pages = json.load(open(PROCESSED / f"{act['stem']}.json", encoding="utf-8"))
+    sections = split_sections(clean_pages(pages, act["junk"]), act["stop"])
+    if act.get("inline_heading"):
         for s in sections:
-            chunk = {
-                "id": f"{STEM}-{s['section']}",
-                "act": ACT_NAME,
-                "section": s["section"],
-                "heading": s["heading"],
-                "page": s["page"],
-                "text": unwrap(s["lines"]),
-            }
-            f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
-    print(f"{len(sections)} sections -> {out}")
-    for s in sections[:6]:
-        print(s["section"], "|", s["heading"])
-    print("...")
-    for s in sections[-3:]:
-        print(s["section"], "|", s["heading"])
+            inline_heading(s)
+    return sections
+
+
+def main():
+    out = PROCESSED / "chunks.jsonl"
+    total = 0
+    with open(out, "w", encoding="utf-8") as f:
+        for act in ACTS:
+            if not (PROCESSED / f"{act['stem']}.json").exists():
+                print(f"skip {act['stem']} (no json)")
+                continue
+            sections = chunk_act(act)
+            for s in sections:
+                chunk = {
+                    "id": f"{act['stem']}-{s['section']}",
+                    "act": act["name"],
+                    "section": s["section"],
+                    "heading": s["heading"],
+                    "page": s["page"],
+                    "text": unwrap(s["lines"]),
+                }
+                f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
+            total += len(sections)
+            print(f"{act['name']}: {len(sections)} sections")
+    print(f"total {total} -> {out}")
 
 
 if __name__ == "__main__":
