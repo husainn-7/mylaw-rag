@@ -95,10 +95,11 @@ def evaluate(name, search):
 
 
 def get_search(name):
-    if name == "dense":
-        from retrieve import DenseRetriever
-        return DenseRetriever().search
-    raise SystemExit(f"unknown method: {name}")
+    from retrieve import METHODS
+
+    if name not in METHODS:
+        raise SystemExit(f"unknown method: {name}. choose from {list(METHODS)}")
+    return METHODS[name]().search
 
 
 if __name__ == "__main__":
