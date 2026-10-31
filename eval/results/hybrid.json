@@ -756,13 +756,13 @@
         "contracts_act-16",
         "contracts_act-14",
         "contracts_act-20",
-        "contracts_act-191",
         "contracts_act-24",
-        "contracts_act-188",
-        "contracts_act-187",
-        "contracts_act-149",
+        "pdpa-2",
+        "pdpa-4",
         "pdpa-37",
-        "pdpa-116"
+        "pdpa-116",
+        "pdpa-3",
+        "contracts_act-17"
       ],
       "rank": 1
     },
@@ -950,8 +950,8 @@
         "contracts_act-128",
         "contracts_act-132",
         "contracts_act-130",
-        "contracts_act-190",
-        "contracts_act-153"
+        "contracts_act-79",
+        "pdpa-4"
       ],
       "rank": 1
     },
@@ -1139,7 +1139,7 @@
         "employment_act-12",
         "employment_act-60F",
         "employment_act-2",
-        "employment_act-6",
+        "employment_act-102",
         "employment_act-41A",
         "employment_act-23",
         "contracts_act-160"
@@ -1157,13 +1157,13 @@
         "employment_act-18A",
         "employment_act-24",
         "contracts_act-16",
-        "employment_act-14",
         "contracts_act-112",
         "employment_act-25A",
-        "employment_act-2",
         "contracts_act-75",
+        "employment_act-100",
         "employment_act-60E",
-        "contracts_act-25"
+        "contracts_act-25",
+        "employment_act-15"
       ],
       "rank": 2
     },
@@ -1306,6 +1306,7 @@
       ],
       "ranked": [
         "pdpa-103",
+        "pdpa-4",
         "pdpa-130",
         "pdpa-3",
         "pdpa-113",
@@ -1313,8 +1314,7 @@
         "pdpa-38",
         "pdpa-118",
         "pdpa-140",
-        "pdpa-37",
-        "pdpa-68"
+        "pdpa-37"
       ],
       "rank": null
     },
@@ -1696,8 +1696,8 @@
         "contracts_act-186",
         "contracts_act-19",
         "contracts_act-157",
-        "contracts_act-168",
         "pdpa-130",
+        "contracts_act-168",
         "contracts_act-191",
         "pdpa-37",
         "contracts_act-190"
