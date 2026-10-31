@@ -125,6 +125,7 @@ class RagPipeline:
             "question": question,
             "answer": text,
             "sources": list(sources),
+            "context": sources,
             "cited": cited,
             "invalid_cites": [c for c in cited if c not in sources],
             "abstained": ABSTAIN.lower() in text.lower(),
