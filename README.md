@@ -13,8 +13,8 @@ Question answering over three Malaysian Acts, with an evaluation harness that me
 
 ![CI](https://github.com/husainn-7/mylaw-rag/actions/workflows/ci.yml/badge.svg)
 
-**Live demo:** https://huggingface.co/spaces/Husainn7/mylaw-rag
-(The hosted demo runs retrieval only: it returns the most relevant sections with their full text. Answer generation is evaluated offline, see below.)
+**Live demo:** https://malaysian-law-rag.streamlit.app
+(Hosted free on Streamlit Community Cloud. The demo runs retrieval only: it returns the most relevant sections with their full text. Answer generation is evaluated offline, see below. The app sleeps after 12 hours without visitors, so the first load can take a minute.)
 
 <!-- Add a demo GIF here once recorded:
 ![demo](docs/demo.gif)
