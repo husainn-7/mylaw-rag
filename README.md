@@ -27,7 +27,7 @@ Question answering over three Malaysian Acts, with an evaluation harness that me
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[3 Acts as PDFs] --> B[Extract and clean text]
     B --> C[Split into 478 sections]
     C --> D[587 passages, bge-small embeddings, FAISS index]
